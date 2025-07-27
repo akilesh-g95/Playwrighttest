@@ -8,6 +8,7 @@ test('handling checkboxes', async({page})=>{
    await expect( await page.locator('//input[@type="checkbox" and @id="sunday"]').isChecked()).toBeTruthy();
 
    await page.waitForTimeout(3000);
+   await page.waitForTimeout(3000)
 
    //multiple checking the checkbox
 
